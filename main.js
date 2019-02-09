@@ -3,5 +3,10 @@ const app = new Vue({
   data() {
     return {clicks: 0}
   },
-  template: '<div><button>Click here</button><br>You clicked {{clicks}} times.</div>'
+  methods: {
+    add() {
+      this.clicks++;
+    }
+  },
+  template: '<div><button @click="add">Click here</button><br>You clicked {{clicks}} times.</div>'
 });
