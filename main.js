@@ -1,12 +1,16 @@
 const app = new Vue({
-  el: '#app',
-  data() {
-    return {clicks: 0}
-  },
-  methods: {
-    add() {
-      this.clicks++;
-    }
-  },
-  template: '<div><button @click="add">Click here</button><br>You clicked {{clicks}} times.</div>'
+	template:
+		'<div>' +
+		'<button @click="increment">Click here</button>' +
+		'<br>You clicked {{clicks}} times.' +
+		'</div>',
+	el: '#app',
+	data() {
+		return {clicks: 0};
+	},
+	methods: {
+		increment() {
+			this.clicks++;
+		}
+	}
 });
