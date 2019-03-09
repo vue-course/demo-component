@@ -8,7 +8,7 @@ const Clicker = Vue.extend({
 });
 
 const Counter = Vue.extend({
-	template: '<div>You clicked {{clicks}} times.</div>'
+	template: '<div>You clicked {{clicks}} times.</div>',
 	props: {
 		clicks: Number,
 	}
